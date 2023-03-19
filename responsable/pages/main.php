@@ -184,7 +184,10 @@
 				</div>
 			</div>
 		</main>
+
 	</section>
+
+	<script src="../scripte/script.js"></script>
 </body>
-<link rel="stylesheet" href="../scripte/script.js">
+
 </html>

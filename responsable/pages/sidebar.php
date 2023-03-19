@@ -30,19 +30,19 @@
 			<li>
 				<a href="#">
 					<i class='bx bxs-shopping-bag-alt' ></i>
-					<span class="text">My Store</span>
+					<span class="text">Annances</span>
 				</a>
 			</li>
-			<li>
+			<!-- <li>
 				<a href="#">
 					<i class='bx bxs-doughnut-chart' ></i>
 					<span class="text">Analytics</span>
 				</a>
-			</li>
+			</li> -->
 			<li>
 				<a href="#">
 					<i class='bx bxs-message-dots' ></i>
-					<span class="text">Message</span>
+					<span class="text">list of user</span>
 				</a>
 			</li>
 			<li>
@@ -67,6 +67,6 @@
 			</li>
 		</ul>
 	</section>
+	<link rel="stylesheet" href="../scripte/sidenav.js">
 </body>
-<link rel="stylesheet" href="../scripte/sidenav.js">
 </html>

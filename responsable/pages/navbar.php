@@ -34,6 +34,6 @@
 		</nav>
 		<!-- NAVBAR -->
     </section>
+    <link rel="stylesheet" href="../scripte/sidenav.js">
 </body>
-<link rel="stylesheet" href="../scripte/script.js">
 </html>
