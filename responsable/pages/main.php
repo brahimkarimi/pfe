@@ -13,10 +13,12 @@
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<!-- My CSS -->
 	<link rel="stylesheet" href="../css/style.css">
+  <<link rel="stylesheet" href="https://kit.fontawesome.com/6404735ed8.css" crossorigin="anonymous">title>Document</title>
+
 </head>
 <body>
 	<section id="content">
-        <main>
+    <main>
 			<div class="head-title">
 				<div class="left">
 					<h1>Dashboard</h1>
@@ -30,10 +32,6 @@
 						</li>
 					</ul>
 				</div>
-				<a href="#" class="btn-download">
-					<i class='bx bxs-cloud-download' ></i>
-					<span class="text">Download PDF</span>
-				</a>
 			</div>
 
 			<ul class="box-info">
@@ -63,11 +61,13 @@
 
 			<div class="table-data">
 				<div class="order">
+
+
 					<div class="head">
 						<h3>Recent Orders</h3>
 						<i class='bx bx-search' ></i>
 						<i class='bx bx-filter' ></i>
-					</div>
+					</div> 
 					<table>
 						<thead>
 							<tr>
@@ -85,9 +85,9 @@
 								<td>01-10-2021</td>
 								<td>
 									<input id="submit" name="submit" type="submit" value="" onclick="eatFood();" >
-									<a href="#" class="status completed"> ajouter</a>
+									<a href="#" class="status completed">Accepter</a>
 									<input id="submit" name="submit" type="submit" value="" onclick="eatFood();" >
-									<a href="page.html" class="status pending btn" >delete</a>
+									<a href="page.html" class="status pending btn" >Rejeter</a>
 									</input>
 									</a>
 								</td>
@@ -99,12 +99,31 @@
 								</td>
 								<td>01-10-2021</td>
 								<td>
+                  
 									<input id="submit" name="submit" type="submit" value="" onclick="eatFood();" >
-									<a href="#" class="status completed"> ajouter</a>
-									<input id="submit" name="submit" type="submit" value="" onclick="eatFood();" >
-									<a href="#" class="status pending btn" >delete</a>
+									    <a href="#" class="status completed"> Accepter</a>
+									    <input id="submit" name="submit" type="submit" value="" onclick="eatFood();" >
+									    <a href="#" class="status pending btn" >Rejeter</a>
+
 									</input>
-									</a>
+									
+								</td>
+							</tr>
+							<tr>
+
+								<td>
+									<img src="../images/people.png">
+									<p>John Doe</p>
+								</td>
+								<td>01-10-2021</td>
+
+								<td>
+									<input id="submit" name="submit" type="submit" value="" onclick="eatFood();" >
+                      <a href="#" class="status completed"> Accepter</a>
+                      <input id="submit" name="submit" type="submit" value="" onclick="eatFood();" >
+                      <a href="#" class="status pending btn" >Rejeter</a>
+									</input>
+									
 								</td>
 							</tr>
 							<tr>
@@ -115,24 +134,9 @@
 								<td>01-10-2021</td>
 								<td>
 									<input id="submit" name="submit" type="submit" value="" onclick="eatFood();" >
-									<a href="#" class="status completed"> ajouter</a>
+									<a href="#" class="status completed"> Accepter</a>
 									<input id="submit" name="submit" type="submit" value="" onclick="eatFood();" >
-									<a href="#" class="status pending btn" >delete</a>
-									</input>
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<img src="../images/people.png">
-									<p>John Doe</p>
-								</td>
-								<td>01-10-2021</td>
-								<td>
-									<input id="submit" name="submit" type="submit" value="" onclick="eatFood();" >
-									<a href="#" class="status completed"> ajouter</a>
-									<input id="submit" name="submit" type="submit" value="" onclick="eatFood();" >
-									<a href="#" class="status pending btn" >delete</a>
+									<a href="#" class="status pending btn" >Rejeter</a>
 									</input>
 									</a>
 								</td>
@@ -144,14 +148,77 @@
 								</td>
 								<td>01-10-2021</td>
 								<td>									<input id="submit" name="submit" type="submit" value="" onclick="eatFood();" >
-									<a href="#" class="status completed"> ajouter</a>
+									<a href="#" class="status completed"> Accepter</a>
 									<input id="submit" name="submit" type="submit" value="" onclick="eatFood();" >
-									<a href="#" class="status pending btn" >delete</a>
+									<a href="#" class="status pending btn" >Rejeter</a>
 									</input>
 									</a></td>
 							</tr>
 						</tbody>
 					</table>
+
+
+					
+
+
+          
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 16px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    .icons-table{
+      display: flex;
+      justify-content: space-around;
+    }
+    .btn-icons i {
+      font-size: 1.5em;
+    }
+    .plus i{
+      color: powderblue;
+    }
+    .trash i{
+      color: tomato;
+    }
+    .pen i{
+      color: forestgreen;
+    }
+
+    .Tablebtns {
+        display: flex;
+    }
+    .Tablentn {
+        padding: 1em;
+        background-color: rgb(157 151 151 / 73%);
+        margin: 12px;
+        border-radius: 12px;
+        cursor: pointer;
+        font-family: sans-serif;
+        font-size: 0,8em;
+        font-weight: 700;
+    }
+
+
+    body.dark {
+    --light: #2f2f36;
+    --grey: #273048;
+    --dark: #cdcd90fc;
+}
+
+   </style>
+    <!--
 				</div>
 				<div class="todo">
 					<div class="head">
@@ -183,11 +250,17 @@
 					</ul>
 				</div>
 			</div>
+    -->
+
+
 		</main>
 
 	</section>
 
 	<script src="../scripte/script.js"></script>
+  <script src="https://kit.fontawesome.com/6404735ed8.js" crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
