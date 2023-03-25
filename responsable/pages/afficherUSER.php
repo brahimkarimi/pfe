@@ -37,7 +37,8 @@ if (!$res) {
     
 	<!-- My CSS -->
 	<link rel="stylesheet" href="../css/style.css">
-  <<link rel="stylesheet" href="https://kit.fontawesome.com/6404735ed8.css" crossorigin="anonymous">title>Document</title>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/6404735ed8.css" crossorigin="anonymous">title>Document</title>
+    <script src="https://kit.fontawesome.com/6404735ed8.js" crossorigin="anonymous"></script>
 
 
     
@@ -49,7 +50,10 @@ if (!$res) {
     <section id="content">
         <main>
             <div class="head-title">
-            
+                <a href="#" class="btn-download">
+					<i class='bx bxs-cloud-download' ></i>
+					<span class="text">Add</span>
+				</a>
                         <br><br>
                         <table style="border-radius='2'">
                             <tr>
@@ -62,6 +66,7 @@ if (!$res) {
                                 <th>id Respo</th>
                                 <th>Type</th>
                                 <th>etat_inscription</th>
+                                <th>statut</th>
                             </tr>
 
                             <?php
@@ -71,6 +76,12 @@ if (!$res) {
                                     foreach ($line as $value) {
                                         echo "<td>$value</td>";
                                     }
+                                    echo "
+                                    <td class='icons-table'>
+                                        <button class='btn-icons trash'><i class='fa-sharp fa-solid fa-trash'></i></button>
+                                        <button class='btn-icons pen'><i class='fa-sharp fa-solid fa-pen-to-square'></i></button>
+                                    </td>
+                                    ";
                                     echo "</tr>";
                                 }
                             

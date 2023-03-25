@@ -345,16 +345,17 @@ body {
 	pointer-events: unset;
 }
 #content main .head-title .btn-download {
-	height: 36px;
-	padding: 0 16px;
-	border-radius: 36px;
-	background: var(--blue);
-	color: var(--light);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	grid-gap: 10px;
-	font-weight: 500;
+	
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 36px;
+    background: var(--blue);
+    color: var(--light);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    grid-gap: 10px;
+    font-weight: 500;
 }
 
 
@@ -654,7 +655,6 @@ body.dark {
 	--grey: #273048;
 	--dark: #cdcd90fc;
 }
-
 
 
 /**/

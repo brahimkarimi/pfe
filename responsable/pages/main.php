@@ -18,7 +18,7 @@
 </head>
 <body>
 	<section id="content">
-    <main>
+    	<main>
 			<div class="head-title">
 				<div class="left">
 					<h1>Dashboard</h1>
@@ -32,6 +32,10 @@
 						</li>
 					</ul>
 				</div>
+				<a href="#" class="btn-download">
+					<i class='bx bxs-cloud-download' ></i>
+					<span class="text">Add</span>
+				</a>
 			</div>
 
 			<ul class="box-info">

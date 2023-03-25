@@ -20,8 +20,8 @@
 <body>
 <section id="sidebar">
 		<a href="#" class="brand">
-			<i class='bx bxs-smile'></i>
-			<span class="text">AdminHub</span>
+		<img src="../images/spotclub.svg" style="width: 38px; height: px;" >
+			<span class="text">SpoClub</span>
 		</a>
 		<ul class="side-menu top">
 			<li class="active">
@@ -31,17 +31,11 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="order.php">
 					<i class='bx bxs-shopping-bag-alt' ></i>
-					<span class="text">Annances</span>
+					<span class="text">Order</span>
 				</a>
 			</li>
-			<!-- <li>
-				<a href="#">
-					<i class='bx bxs-doughnut-chart' ></i>
-					<span class="text">Analytics</span>
-				</a>
-			</li> -->
 			<li>
 				<a href="afficherUSER.PHP">
 					<i class='bx bxs-message-dots' ></i>
@@ -54,6 +48,12 @@
 					<span class="text">Team</span>
 				</a>
 			</li>
+			<li>
+				<a href="profil.php">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Profil</span>
+				</a>
+			</li> 
 		</ul>
 		<ul class="side-menu">
 			<li>

@@ -28,13 +28,18 @@ if (!$res) {
 	<link rel="stylesheet" href="../css/nav.css">
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/6404735ed8.js" crossorigin="anonymous"></script>
 
     
 </head>
 <body>
     <section id="content">
         <main>
-            <div class="head-title">    
+            <div class="head-title">
+                <a href="#" class="btn-download">
+					<i class='bx bxs-cloud-download' ></i>
+					<span class="text">Add</span>
+				</a>    
                 <br><br>
                 <table style="border-radius='2'">
                     <tr>
@@ -51,6 +56,12 @@ if (!$res) {
                             foreach ($line as $value) {
                                 echo "<td>$value</td>";
                             }
+                            echo "
+                            <td class='icons-table'>
+                                <button class='btn-icons trash'><i class='fa-sharp fa-solid fa-trash'></i></button>
+                                <button class='btn-icons pen'><i class='fa-sharp fa-solid fa-pen-to-square'></i></button>
+                            </td>
+                            ";
                             echo "</tr>";
                         }
                     
