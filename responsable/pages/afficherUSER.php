@@ -1,24 +1,18 @@
-
-
 <?php 
-//CIN	Nom	Prenom	Tel	Capitaine	nom_equie	id_Respo	Type	etat_inscription
 include 'connection.php';
 
-$requet="SELECT * from users ";
-$res=$connection->query($requet);
+$requete = "SELECT * FROM users";
+$res = $connection->query($requete);
 
 if (!$res) {
-    echo "la recuperation des donnees a ricintre un probleme '<br>'" ;
+    echo "La récupération des données a rencontré un problème '<br>'";
 }
 
 ?>
 
 <?php 
-    
-    '<link href="../css/style.css"></link>';
-    include('sidebar.php');
+include 'sidebar.php';
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,74 +20,73 @@ if (!$res) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lise of user </title>
+    <title>Liste of user</title>
     <link rel="stylesheet" href="../css/tble.css">
-	<link rel="stylesheet" href="../css/nav.css">
-	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-	<link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/6404735ed8.css" crossorigin="anonymous">
 
 
-    
-	<!-- My CSS -->
-	<link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/6404735ed8.css" crossorigin="anonymous">title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/6404735ed8.js" crossorigin="anonymous"></script>
-
-
-    
-
-
 </head>
 <body>
-    <h2>Liste of user</h2>
+    <h2>Liste of user</h2><br><br><br>
     <section id="content">
         <main>
             <div class="head-title">
                 <a href="#" class="btn-download">
-					<i class='bx bxs-cloud-download' ></i>
-					<span class="text">Add</span>
-				</a>
-                        <br><br>
-                        <table style="border-radius='2'">
-                            <tr>
-                                <th>CIN</th>
-                                <th>Nom</th>
-                                <th>Prenom</th>
-                                <th>Tel</th>
-                                <th>Capitaine</th>
-                                <th>Nom equie</th>
-                                <th>id Respo</th>
-                                <th>Type</th>
-                                <th>etat_inscription</th>
-                                <th>statut</th>
-                            </tr>
-
-                            <?php
-                            
-                                while ($line = $res->fetch(PDO::FETCH_NUM)) {
-                                    echo "<tr>";
-                                    foreach ($line as $value) {
-                                        echo "<td>$value</td>";
-                                    }
-                                    echo "
-                                    <td class='icons-table'>
-                                        <button class='btn-icons trash'><i class='fa-sharp fa-solid fa-trash'></i></button>
-                                        <button class='btn-icons pen'><i class='fa-sharp fa-solid fa-pen-to-square'></i></button>
-                                    </td>
-                                    ";
-                                    echo "</tr>";
-                                }
-                            
-                            ?>
-                        </table>
-                        <?php $res->closeCursor()?>
-                        <?php 
-                            //include 'sidebar.php'
-                        ?>
+                    <span class="text">Add</span>
+                </a>
             </div>
+            <br><br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>CIN</th>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Téléphone</th>
+                        <th>Capitaine</th>
+                        <th>Nom équipe</th>
+                        <th>id Respo</th>
+                        <th>Type</th>
+                        <th>Etat inscription</th>
+                        <th>Statut</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php                                    
+                        while ($line = $res->fetch(PDO::FETCH_ASSOC)) {
+                            echo "<tr>";
+                            echo "
+                                <td>$line[id]</td>
+                                <td>$line[CIN]</td>
+                                <td>$line[Nom]</td>
+                                <td>$line[Prenom]</td>
+                                <td>$line[Tel]</td>
+                                <td>$line[Capitaine]</td>
+                                <td>$line[nom_equie]</td>
+                                <td>$line[id_Respo]</td>
+                                <td>$line[Type]</td>
+                                <td>$line[etat_inscription]</td>
+                                <td class='icons-table'>
+                                    <button class='btn-icons trash'><a href='delete.php?id=$line[id]'><i class='fas fa-trash'></i></a></button>
+                                    <button class='btn-icons pen'><a href='update.php?id=$line[id]'><i class='fas fa-pen-square'></i></a></button>
+                                </td>
+                            ";
+                            echo "</tr>";
+                        }
+                        $res->closeCursor();
+                    ?>
+                </tbody>
+            </table>                  
         </main>
     </section>
-	<script src="../scripte/script.js"></script>
+    <script src="../scripte/script.js"></script>
 </body>
 </html>

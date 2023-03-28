@@ -33,11 +33,12 @@ if (!$res) {
     
 </head>
 <body>
+    <h2>liste of Team</h2>
     <section id="content">
         <main>
             <div class="head-title">
                 <a href="#" class="btn-download">
-					<i class='bx bxs-cloud-download' ></i>
+					
 					<span class="text">Add</span>
 				</a>    
                 <br><br>

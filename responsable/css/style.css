@@ -344,7 +344,7 @@ body {
 	color: var(--blue);
 	pointer-events: unset;
 }
-#content main .head-title .btn-download {
+#content main .title .btn-download {
 	
     height: 36px;
     padding: 0 16px;

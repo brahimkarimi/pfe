@@ -253,3 +253,21 @@ body {
 .table-data input.btn[type="submit"]:hover {
     border: 1px solid black;
 }
+
+
+/**/
+
+#content .text-reset {
+    color: inherit !important;
+	
+}
+
+
+#content .text-decoration-none {
+    text-decoration: none !important;
+}
+
+#content .mx-2 {
+    margin-right: -1.5rem !important;
+    margin-left: 0.5rem !important;
+}
