@@ -16,10 +16,11 @@ try {
 
 // Récupération des informations personnelles de l'utilisateur
 $user_id = 1; // L'identifiant de l'utilisateur à récupérer
-$sql = "SELECT CIN , Nom, Prenom, Tel, img FROM users WHERE CIN = :F1212";
+$sql = "SELECT CIN, Nom, Prenom, Tel, img FROM users WHERE CIN = :F1212";
 $stmt = $conn->prepare($sql);
-$stmt->bindParam(':CIN', $user_id);
+$stmt->bindParam(':F1212', $user_id);
 $stmt->execute();
+
 
 ?>
 

@@ -58,6 +58,9 @@ if (!$res) {
                                 echo "<td>$value</td>";
                             }
                             echo "
+                            <td>Nom Equipe</td>
+                            <td>la date de creation</td>
+                            <td>Nombre de joueur</td>
                             <td class='icons-table'>
                                 <button class='btn-icons trash'><i class='fa-sharp fa-solid fa-trash'></i></button>
                                 <button class='btn-icons pen'><i class='fa-sharp fa-solid fa-pen-to-square'></i></button>

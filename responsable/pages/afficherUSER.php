@@ -70,7 +70,7 @@ include 'sidebar.php';
                                 <td>$line[Prenom]</td>
                                 <td>$line[Tel]</td>
                                 <td>$line[Capitaine]</td>
-                                <td>$line[nom_equie]</td>
+                                <td>$line[nom_equipe]</td>
                                 <td>$line[id_Respo]</td>
                                 <td>$line[Type]</td>
                                 <td>$line[etat_inscription]</td>

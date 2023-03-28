@@ -33,7 +33,7 @@ if(isset($_GET['id'])){
     $row = $result->fetch(PDO::FETCH_ASSOC);
     
     $connection = null;
-    header('location:afficherUSER.php')
+    //header('location:afficherUSER.php')
 ?>
 
 <!DOCTYPE html>
