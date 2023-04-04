@@ -13,7 +13,8 @@
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<!-- My CSS -->
 	<link rel="stylesheet" href="../css/style.css">
-  <<link rel="stylesheet" href="https://kit.fontawesome.com/6404735ed8.css" crossorigin="anonymous">title>Document</title>
+  	<link rel="stylesheet" href="https://kit.fontawesome.com/6404735ed8.css" crossorigin="anonymous">title>Document</title>
+		
 
 </head>
 <body>
@@ -32,10 +33,11 @@
 						</li>
 					</ul>
 				</div>
-				<a href="#" class="btn-download">
+				<!--<a href="#" class="btn-download">
 					<i class='bx bxs-cloud-download' ></i>
 					<span class="text">Add</span>
-				</a>
+				</a>--><!-- HTML !-->
+				<button class="button-7 bx" role="button">Ajouter</button>
 			</div>
 
 			<ul class="box-info">

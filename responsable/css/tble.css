@@ -25,10 +25,10 @@ table {
     color: powderblue;
   }
   .trash i{
-    color: tomato;
+    color: rgb(16, 15, 15);
   }
   .pen i{
-    color: forestgreen;
+    color: rgb(10, 11, 10);
   }
   
   .Tablebtns {

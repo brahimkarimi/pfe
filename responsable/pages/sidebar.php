@@ -15,6 +15,8 @@
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/sidebar.css">
 
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 	
 </head>
 <body>
@@ -37,9 +39,16 @@
 				</a>
 			</li>
 			<li>
-				<a href="afficherUSER.PHP">
-					<i class='bx bxs-message-dots' ></i>
+				<a href="#">
+					<i class='bx bxs-message-dots'></i>
+					<div class="listeU">
 					<span class="text">list of user</span>
+						<a href="../affiche_user/inscrit.php"><li><button class="dropdown-item" type="button">inscrit</button></li></a>
+						<a href="../affiche_user/attent_respo.php"><li><button class="dropdown-item" type="button">attent responsable</button></li></a>
+						<a href="../affiche_user/attent_capit.php"><li><button class="dropdown-item" type="button">attent capitaine</button></li></a>
+						<a href="../affiche_user/refus_respo.php"><li><button class="dropdown-item" type="button">refus responsable</button></li></a>
+						<a href="../affiche_user/refus_capit.php"><li><button class="dropdown-item text" type="button">refus capitaine</button></li></a>
+					</div>
 				</a>
 			</li>
 			<li>

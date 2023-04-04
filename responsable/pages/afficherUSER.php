@@ -38,9 +38,8 @@ include 'sidebar.php';
     <section id="content">
         <main>
             <div class="head-title">
-                <a href="#" class="btn-download">
-                    <span class="text">Add</span>
-                </a>
+            <button class="button-7 bx" role="button">Ajouter</button>
+
             </div>
             <br><br>
             <table>
@@ -73,12 +72,15 @@ include 'sidebar.php';
                                 <td>$line[nom_equipe]</td>
                                 <td>$line[id_Respo]</td>
                                 <td>$line[Type]</td>
-                                <td>$line[etat_inscription]</td>
+                                <td>$line[etat_inscription]</td>";
+                                ?>
                                 <td class='icons-table'>
-                                    <button class='btn-icons trash'><a href='delete.php?id=$line[id]'><i class='fas fa-trash'></i></a></button>
+                                    <button class='btn-icons trash' style="color:black;"><?php echo "<a href='delete.php?id=$line[id]'><i class='fas fa-trash'></i></a>";?></button>
+                                </td>
+                                <td class='icons-table'>
                                     <button class='btn-icons pen'><a href='update.php?id=$line[id]'><i class='fas fa-pen-square'></i></a></button>
                                 </td>
-                            ";
+                            <?php
                             echo "</tr>";
                         }
                         $res->closeCursor();

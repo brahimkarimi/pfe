@@ -8,13 +8,13 @@ if(isset($_POST['update'])){
     $prenom = $_POST['Prenom'];
     $tel = $_POST['Tel'];
     $capitaine = $_POST['Capitaine'];
-    $nomEquipe = $_POST['nom_equie'];
+    $nomEquipe = $_POST['nom_equipe'];
     $idRespo = $_POST['id_Respo'];
     $type = $_POST['Type'];
     $etatInscription = $_POST['etat_inscription'];
     
     // Update query
-    $query = "UPDATE users SET CIN='$cin', Nom='$nom', Prenom='$prenom', Tel='$tel', Capitaine='$capitaine', nom_equie='$nomEquipe', id_Respo='$idRespo', Type='$type', etat_inscription='$etatInscription' WHERE id='$id'";
+    $query = "UPDATE users SET CIN='$cin', Nom='$nom', Prenom='$prenom', Tel='$tel', Capitaine='$capitaine', nom_equipe='$nomEquipe', id_Respo='$idRespo', Type='$type', etat_inscription='$etatInscription' WHERE id='$id'";
     
     // Execute the query
     if($connection->query($query)){
@@ -55,7 +55,7 @@ if(isset($_GET['id'])){
         <label>Capitaine:</label>
         <input type="text" name="Capitaine" value="<?php echo $row['Capitaine']; ?>"><br><br>
         <label>Nom equipe:</label>
-        <input type="text" name="nom_equie" value="<?php echo $row['nom_equie']; ?>"><br><br>
+        <input type="text" name="nom_equipe" value="<?php echo $row['nom_equipe']; ?>"><br><br>
         <label>Id respo:</label>
         <input type="text" name="id_Respo" value="<?php echo $row['id_Respo']; ?>"><br><br>
         <label>Type:</label>
