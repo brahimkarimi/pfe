@@ -42,9 +42,9 @@ include 'sidebar.php';
 <body>
    
     <section id="content">
-    <main>
+    <main><h2>Liste des membres de l'équipe <?php echo $nom_equipe; ?></h2><br><br>
         <div  class="table-data">
-            <h2>Liste des membres de l'équipe <?php echo $nom_equipe; ?></h2><br><br><br>
+            
                 <div class="order">
                     <table id="tableau">
                         <thead>

@@ -96,7 +96,7 @@
                                                 </div>
                                             </div>
                                             <div class=" row">
-                                                <div class="btn col-md-6"><a href="#" >Editer</a></div>
+                                                <div class="btn col-md-6"><a href="editeUser.php?id=<?php echo $CIN; ?>" >Editer</a></div>
                                                 <div class="btn col-md-6"><a href="#" >Suprimer</a></div>
                                             </div>
                                         <?php } else { ?>
