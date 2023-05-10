@@ -25,7 +25,7 @@
 		</a>
 		<ul class="side-menu top">
 			<li class="active">
-				<a href="">
+				<a href="main.php">
 					<i class='bx bxs-dashboard' ></i>
 					<span class="text">Dashboard</span>
 				</a>
@@ -37,10 +37,22 @@
 				</a>
 			</li>
 			<li>
-				<a href="main.php">
+				<a href="calendrier.php">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Calendrier</span>
+				</a>
+			</li>
+			<li>
+			    <a href="joueur.php">
 					<i class='bx bxs-message-dots' ></i>
 					<span class="text">list of user</span>
-				</a>
+			    </a>
+			</li>
+			<li>
+			    <a href="messages.php">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">Messages</span>
+			    </a>
 			</li>
 			<li>
 				<a href="profil.php">
@@ -51,7 +63,7 @@
 		</ul>
 		<ul class="side-menu">
 			<li>
-				<a href="#" class="logout">
+				<a href="deconnexion.php" class="logout">
 					<i class='bx bxs-log-out-circle' ></i>
 					<span class="text">Logout</span>
 				</a>

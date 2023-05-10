@@ -15,9 +15,8 @@
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/sidebar.css">
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-	
+	<link rel="stylesheet" href="../css/sidemenu.css">
+	</style>
 </head>
 <body>
 <section id="sidebar">
@@ -34,47 +33,66 @@
 			</li>
 			<li>
 				<a href="order.php">
-					<i class='bx bxs-shopping-bag-alt' ></i>
-					<span class="text">Order</span>
+					<i class='bx bxs-detail' ></i>
+					<span class="text">Demandes d'inscription</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
-					<i class='bx bxs-message-dots'></i>
-					<div class="listeU">
-					<span class="text">list of user</span>
-						<a href="../affiche_user/inscrit.php"><li><button class="dropdown-item" type="button">inscrit</button></li></a>
-						<a href="../affiche_user/attent_respo.php"><li><button class="dropdown-item" type="button">attent responsable</button></li></a>
-						<a href="../affiche_user/attent_capit.php"><li><button class="dropdown-item" type="button">attent capitaine</button></li></a>
-						<a href="../affiche_user/refus_respo.php"><li><button class="dropdown-item" type="button">refus responsable</button></li></a>
-						<a href="../affiche_user/refus_capit.php"><li><button class="dropdown-item text" type="button">refus capitaine</button></li></a>
-					</div>
+				<a href="messages.php">
+				    <i class='bx bxs-message-dots' ></i>
+					<span class="text">Messages</span>
+				</a>
+			</li>
+			<li>
+				<a href="afficherUSER.PHP">
+					<i class='bx bxs-notepad' ></i>
+					<span class="text">Liste d'utilisateurs</span>
 				</a>
 			</li>
 			<li>
 				<a href="equipe.php">
 					<i class='bx bxs-group' ></i>
-					<span class="text">Team</span>
+					<span class="text">Equipes</span>
 				</a>
 			</li>
 			<li>
 				<a href="profil.php">
+					<i class='bx bxs-user-circle' ></i>
+					<span class="text">Profile</span>
+				</a>
+			</li> 
+			<li>
+				<a href="calendrier.php">
 					<i class='bx bxs-doughnut-chart' ></i>
-					<span class="text">Profil</span>
+					<span class="text">Calendrier</span>
 				</a>
 			</li> 
 		</ul>
+		<ul class="mcd-menu side-menu top">
+			<li>
+				<a href="">
+					<i class="fa fa-gear"></i>
+					<strong>Parametres</strong>
+				</a>
+				<ul>
+					<li><a href="#"><i class=""></i>Ajouter Responsable</a></li>
+					<li>
+						<a href="#"><i class=""></i>Modifier Profile</a>
+						<!-- <ul>
+							<li><a href="#"><i class="fa fa-female"></i>Leyla Sparks</a></li>
+							<li><a href="#"><i class="fa fa-male"></i>Gleb Ismailov</a></li>
+							<li><a href="#"><i class="fa fa-female"></i>Viktoria Gibbers</a></li>
+						</ul> -->
+					</li>
+					<li><a href="#"><i class=""></i>Vider Base de Donnee</a></li>
+				</ul>
+			</li>
+		</ul>
 		<ul class="side-menu">
 			<li>
-				<a href="#">
-					<i class='bx bxs-cog' ></i>
-					<span class="text">Settings</span>
-				</a>
-			</li>
-			<li>
-				<a href="#" class="logout">
+				<a href="deconnexion.php" class="logout">
 					<i class='bx bxs-log-out-circle' ></i>
-					<span class="text">Logout</span>
+					<span class="text">Deconnexion</span>
 				</a>
 			</li>
 		</ul>

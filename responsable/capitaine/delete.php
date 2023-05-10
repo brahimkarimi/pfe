@@ -3,7 +3,7 @@
 
     if (isset($_GET['id'])) {
         $id=$_GET['id'];
-        $requet="DELETE from users WHERE id=:id";
+        $requet="DELETE from user WHERE id=:id";
         $statement=$connection->prepare($requet);
         $statement->execute(array(':id'=>$id));
     }
